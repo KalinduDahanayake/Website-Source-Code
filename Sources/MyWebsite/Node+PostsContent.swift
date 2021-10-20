@@ -22,6 +22,7 @@ extension Node where Context == HTML.BodyContext {
         return
             .wrapper(
                 // Create an unordered list
+                
                 .ul(
                     // Loop over each blog post that we have in our code
                     .class("item-list"),

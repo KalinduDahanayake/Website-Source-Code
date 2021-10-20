@@ -41,9 +41,6 @@ extension MyHTMLFactory {
                             .class("p p-6")
                         )
                     ),
-                    .div(
-                        .text("tets")
-                    ),
                     .myFooter(for: context.site)
                 )
                 

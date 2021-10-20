@@ -35,6 +35,22 @@ extension Node where Context == HTML.BodyContext {
                         .href("https://github.com/johnsundell/publish")
                     ),
                     .text(". Written in Swift")
+                ),
+                .div(
+                    .a(
+                        .text("Linkedin"),
+                        .href("https://www.linkedin.com/in/Kalindu-Dahanayake/")
+                    ),
+                    .text(" | "),
+                    .a(
+                        .text("Github"),
+                        .href("https://github.com/KalinduDahanayake")
+                    ),
+                    .text(" | "),
+                    .a(
+                        .text("Email"),
+                        .href("mailto:kalindu22@gmail.com")
+                    )
                 )
         )
     }

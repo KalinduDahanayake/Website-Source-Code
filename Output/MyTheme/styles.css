@@ -352,3 +352,69 @@ pre code .dotAccess {
 pre code .preprocessing {
     color: #b68a00;
 }
+
+  .dynamic_typing .h1 {
+      border-right: .15em solid #E44C65;
+      font-family: "Comic Sans";
+      font-weight: bold;
+      opacity: 0;
+      font-size: 25px;
+      margin: 0 right; /* Gives that scrolling effect as the typing happens */
+      white-space: nowrap;
+      overflow: hidden;
+      color: white
+  }
+
+  .dynamic_typing .h1:nth-child(1) {
+    width: 100%;
+    animation: type 2s steps(40, end);
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    align-self: left;
+  }
+  
+  .dynamic_typing h1:nth-child(2) {
+    width: 100%;
+    opacity: 0;
+    animation: type2 2s steps(40, end), blink .5s step-end infinite alternate;;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+  }
+
+
+
+  @keyframes type {
+    0% {
+        width: 0;
+      }
+      1% {
+        opacity: 1;
+      }
+      99.9% {
+        border-right: .15em solid orange;
+      }
+      100% {
+        opacity: 1;
+        border: none;
+      }
+  }
+  
+
+  @keyframes type2 {
+    0% {
+      width: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+

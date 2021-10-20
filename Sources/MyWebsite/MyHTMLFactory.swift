@@ -50,7 +50,28 @@ struct MyHTMLFactory<Site: Website>: HTMLFactory {
     }
     
     func makeTagListHTML(for page: TagListPage, context: PublishingContext<Site>) throws -> HTML? {
-        HTML(.text("Hello, tag list"))
+        HTML(
+            //.lang(context.site.language),
+            .head(for: page, on: context.site),
+            .body (
+                .myHeader(for: context),
+                .wrapper (
+                    .h1("Browse all tags")
+                    
+                    
+//                    List(page.tags.sorted()) { tag in
+//                        ListItem {
+//                            Link(tag.string,
+//                                 url: context.site.path(for: tag).absoluteString
+//                            )
+//                        }
+//                        .class("tag")
+//                    )
+//                    .class("all-tags")
+                ),
+                .myFooter(for: context.site)
+            )
+            )
     }
     
     func makeTagDetailsHTML(for page: TagDetailsPage, context: PublishingContext<Site>) throws -> HTML? {

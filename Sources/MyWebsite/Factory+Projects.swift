@@ -15,11 +15,10 @@ extension MyHTMLFactory {
             .head(for: context.index, on: context.site),
             .body(
                 .myHeader(for: context),
+                .AllTags(for: section.items, on: context.site),
                 .postContent(for: section.items, on: context.site),
-                //.allTags(for: item.tags, on: site),
                 .myFooter(for: context.site)
             )
-            
         )
     }
 }

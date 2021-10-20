@@ -22,6 +22,9 @@ struct MyWebsite: Website {
     var description = "KalinduDahanayake Portfolio Page"
     var language: Language { .english }
     var imagePath: Path? { nil }
+    var favicon: Favicon?  {
+        .init(path: Path("Images/S7iaWZsg.jpg"), type: "image/x-icon")
+    }
 }
 
 extension Theme where Site == MyWebsite {
@@ -30,17 +33,8 @@ extension Theme where Site == MyWebsite {
     }
 }
 
-// This will generate your website using the built-in Foundation theme:
-//try MyWebsite().publish(withTheme: .myTheme, plugins: [.splash(withClassPrefix: "")])
-//try MyWebsite().publish(withTheme: .myTheme)
-
 try MyWebsite().publish(
     withTheme: .myTheme,
     deployedUsing: .gitHub("KalinduDahanayake/KalinduDahanayake.github.io", useSSH: false),
     plugins: [.splash(withClassPrefix: "")]
 )
-
-
-//try MyWebsite().publish(using: [
-//    .deploy(using: .gitHub("KalDah1/KalDah1.github.io"))
-//])
