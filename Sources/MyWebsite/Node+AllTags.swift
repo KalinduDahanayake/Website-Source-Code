@@ -20,7 +20,8 @@ extension Node where Context == HTML.BodyContext {
             }
         }
         // removes repeated tags
-        let uniqueTags = Array(Set(everyTag))
+        var uniqueTags = Array(Set(everyTag))
+        uniqueTags = uniqueTags.sorted { $0.string < $1.string }
         return
             .div(
                 .h1("All tags"),

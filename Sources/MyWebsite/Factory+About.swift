@@ -21,6 +21,9 @@ extension MyHTMLFactory {
                         .class("logo-image"),
                         .src(homeImage)
                     ),
+                    .h2(
+                        .text("Hi!")
+                    ),
                     .div(
                         .div(
                             .class("p p-1")

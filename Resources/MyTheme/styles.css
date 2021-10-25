@@ -13,7 +13,7 @@
 body {
     background: #fff;
     color: #000;
-    font-family: Helvetica, Arial;
+    font-family: San Francisco, Arial;
     text-align: center;
 }
 
@@ -141,6 +141,9 @@ a {
 
 footer {
     color: #8a8a8a;
+    position: fixed;
+    bottom: 30px;
+    width: 100%;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -169,7 +172,7 @@ footer {
 }
 
 .logo-image {
-    width: 30%;
+    width: 20%;
     margin: 20px;
     border-radius: 50%;
 }
@@ -248,8 +251,8 @@ footer {
   .p{
     left:0px;
     top:50px;
-    width:1px;
-    height:1px;
+    width:2px;
+    height:2px;
     background-color:white;
     position:absolute;
     animation-name:particleAnimation;
@@ -265,7 +268,7 @@ footer {
     right:1px;
     top:0px;
     height:1px;
-    background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(228, 72, 72, 0.4) 100%);
+    background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(228, 72, 72, 1) 100%);
     animation-delay: 1000ms;
   }
 
@@ -283,33 +286,27 @@ footer {
   .p-2{
     animation-duration: 3.5s;
     animation-delay: 900ms;
-    top:20%;
+    top:10%;
   }
   .p-3{
     animation-duration: 4s;
     animation-delay: 500ms;;
-    top:40%;
+    top:20%;
   }
   .p-4{
     animation-duration: 3s;
     animation-delay: 300ms;
-    top:50%;
+    top:30%;
   }
   .p-5{
     animation-duration: 5.5s;
     animation-delay: 190ms;
-    top:60%;
+    top:40%;
   }
   .p-6{
     animation-duration: 3s;
     animation-delay: 450ms;
-    top:80%;
-  }
-  
-  .p-6{
-    animation-duration: 3s;
-    animation-delay: 450ms;
-    top:80%;
+    top:50%;
   }
 
 pre code {
@@ -352,31 +349,35 @@ pre code .dotAccess {
 pre code .preprocessing {
     color: #b68a00;
 }
-
-  .dynamic_typing .h1 {
+    
+.dynamic-typing {
+    text-align: auto;
+    display: inline-block;
+}
+  .dynamic-typing h1 {
       border-right: .15em solid #E44C65;
-      font-family: "Comic Sans";
+      font-family: "Courier";
       font-weight: bold;
       opacity: 0;
       font-size: 25px;
       margin: 0 right; /* Gives that scrolling effect as the typing happens */
       white-space: nowrap;
       overflow: hidden;
-      color: white
+      color: white;
   }
 
-  .dynamic_typing .h1:nth-child(1) {
+  .dynamic-typing h1:nth-child(1) {
     width: 100%;
-    animation: type 2s steps(40, end);
+    animation: type 1s steps(40, end);
     animation-fill-mode: forwards;
     animation-delay: 1s;
     align-self: left;
   }
   
-  .dynamic_typing h1:nth-child(2) {
+  .dynamic-typing h1:nth-child(2) {
     width: 100%;
     opacity: 0;
-    animation: type2 2s steps(40, end), blink .5s step-end infinite alternate;;
+    animation: type2 1s steps(40, end), blink .5s step-end infinite alternate;;
     animation-delay: 3s;
     animation-fill-mode: forwards;
   }
@@ -417,4 +418,10 @@ pre code .preprocessing {
       border-color: transparent;
     }
   }
+
+.icon img{
+    width:2%;
+    margin: 10px 5px 5px 5px
+}
+
 

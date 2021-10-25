@@ -17,7 +17,9 @@ extension Node where Context == HTML.BodyContext {
         let currentDate = Calendar.current.component(.day, from: Date())
         
         let string = "\(currentDate)/\(currentMonth)/\(currentYear)"
-        
+        var githubImage: Path { "Images/Github-Mark-Light-64px.png" }
+        var linkedinImage: Path { "Images/174857.png" }
+        var emailImage: Path { "Images/icons8-gmail-48.png" }
         return
             // Creates a container
             .div(
@@ -37,19 +39,24 @@ extension Node where Context == HTML.BodyContext {
                     .text(". Written in Swift")
                 ),
                 .div(
+                    .class("icon"),
                     .a(
-                        .text("Linkedin"),
-                        .href("https://www.linkedin.com/in/Kalindu-Dahanayake/")
+                        .href("https://www.linkedin.com/in/Kalindu-Dahanayake/"),
+                        .img (
+                            .src(linkedinImage)
+                        )
                     ),
-                    .text(" | "),
                     .a(
-                        .text("Github"),
-                        .href("https://github.com/KalinduDahanayake")
+                        .href("https://github.com/KalinduDahanayake"),
+                        .img (
+                            .src(githubImage)
+                        )
                     ),
-                    .text(" | "),
                     .a(
-                        .text("Email"),
-                        .href("mailto:kalindu22@gmail.com")
+                        .href("mailto:kalindu22@gmail.com"),
+                        .img (
+                            .src(emailImage)
+                        )
                     )
                 )
         )
