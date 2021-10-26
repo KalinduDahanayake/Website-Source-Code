@@ -17,7 +17,7 @@ extension Node where Context == HTML.BodyContext {
         let currentDate = Calendar.current.component(.day, from: Date())
         
         let string = "\(currentDate)/\(currentMonth)/\(currentYear)"
-        var githubImage: Path { "Images/Github-Mark-Light-64px.png" }
+        var githubImage: Path { "Images/icons8-github-48.png" }
         var linkedinImage: Path { "Images/174857.png" }
         var emailImage: Path { "Images/icons8-gmail-48.png" }
         return
@@ -58,6 +58,9 @@ extension Node where Context == HTML.BodyContext {
                             .src(emailImage)
                         )
                     )
+//                  .i(
+//                      .class("fab fa-github")
+//                  )
                 )
         )
     }

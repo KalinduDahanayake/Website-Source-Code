@@ -24,9 +24,9 @@ extension Node where Context == HTML.BodyContext {
         uniqueTags = uniqueTags.sorted { $0.string < $1.string }
         return
             .div(
+                .class("padding"),
                 .h1("All tags"),
-                    .tagList(for: uniqueTags, on: site)
-                
+                .tagList(for: uniqueTags, on: site)
             )
     }
 }

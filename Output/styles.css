@@ -142,7 +142,7 @@ a {
 footer {
     color: #8a8a8a;
     position: fixed;
-    bottom: 30px;
+    bottom: 50px;
     width: 100%;
 }
 
@@ -213,6 +213,10 @@ footer {
 
 .post-category-redback {
     background-color: darkred;
+}
+
+.post-category-css {
+    background-color: darkviolet;
 }
 
 
@@ -384,6 +388,7 @@ pre code .preprocessing {
 
 
 
+
   @keyframes type {
     0% {
         width: 0;
@@ -424,4 +429,7 @@ pre code .preprocessing {
     margin: 10px 5px 5px 5px
 }
 
+.padding {
+    margin-top: 10px
+}
 

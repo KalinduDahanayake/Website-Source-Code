@@ -42,14 +42,11 @@ extension MyHTMLFactory {
                         )
                     ),
                     .div(
-//                        .class("div-padding"),
                         .class("dynamic-typing"),
                         .h1(
-//                            .class("dynamic-typing"),
                             .text("// My name is Kalindu Dahanayake.")
                         ),
                         .h1(
-//                            .class("dynamic-typing"),
                             .text("// Welcome to my Portfolio Page.")
                         )
                     ),

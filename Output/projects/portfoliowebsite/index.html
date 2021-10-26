@@ -1,0 +1,18 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"/><meta name="og:site_name" content="KalinduDahanayake"/><link rel="canonical" href="www.KalinduDahanayake/KalinduDahanayake.github.io/projects/portfoliowebsite"/><meta name="twitter:url" content="www.KalinduDahanayake/KalinduDahanayake.github.io/projects/portfoliowebsite"/><meta name="og:url" content="www.KalinduDahanayake/KalinduDahanayake.github.io/projects/portfoliowebsite"/><title>Portfolio Website | KalinduDahanayake</title><meta name="twitter:title" content="Portfolio Website | KalinduDahanayake"/><meta name="og:title" content="Portfolio Website | KalinduDahanayake"/><meta name="description" content="Development of my Portfolio Website"/><meta name="twitter:description" content="Development of my Portfolio Website"/><meta name="og:description" content="Development of my Portfolio Website"/><meta name="twitter:card" content="summary"/><link rel="stylesheet" href="/styles.css" type="text/css"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><link rel="shortcut icon" href="/Images/S7iaWZsg.jpg" type="image/x-icon"/><link rel="alternate" href="/feed.rss" type="application/rss+xml" title="Subscribe to KalinduDahanayake"/></head><body><header><div class="wrapper"><h1>Kalindu Dahanayake</h1><nav><ul><li><a href="/home">Home</a></li><li><a href="/projects">Projects</a></li><li><a href="/about">About</a></li></ul></nav></div></header><div class="wrapper"><article><h1>Portfolio Website</h1><pre><code><span class="keyword">static func</span> AllTags&lt;T: <span class="type">Website</span>&gt;(for items: [<span class="type">Item</span>&lt;<span class="type">T</span>&gt;], on site: <span class="type">T</span>) -&gt; <span class="type">Node</span> {
+    <span class="keyword">var</span> everyTag = [<span class="type">Tag</span>]()
+    
+    items.<span class="call">forEach</span> { item <span class="keyword">in</span>
+        item.<span class="property">tags</span>.<span class="call">forEach</span> { subItem <span class="keyword">in</span>
+            everyTag.<span class="call">append</span>(subItem)
+        }
+    }
+    
+    <span class="keyword">var</span> uniqueTags = <span class="type">Array</span>(<span class="type">Set</span>(everyTag))
+    uniqueTags = uniqueTags.<span class="call">sorted</span> { $0.<span class="property">string</span> &lt; $1.<span class="property">string</span> }
+    <span class="keyword">return</span>
+        .<span class="call">div</span>(
+            .<span class="call">h1</span>(<span class="string">"All tags"</span>),
+                .<span class="call">tagList</span>(for: uniqueTags, on: site)
+        )
+}
+</code></pre></article></div><div class="footer"><div>26/10/2021</div><div>Generated using <a href="https://github.com/johnsundell/publish">Publish</a>. Written in Swift</div><div class="icon"><a href="https://www.linkedin.com/in/Kalindu-Dahanayake/"><img src="/Images/174857.png"/></a><a href="https://github.com/KalinduDahanayake"><img src="/Images/icons8-github-48.png"/></a><a href="mailto:kalindu22@gmail.com"><img src="/Images/icons8-gmail-48.png"/></a></div></div></body></html>

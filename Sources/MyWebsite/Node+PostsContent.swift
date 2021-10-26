@@ -16,7 +16,7 @@ extension Node where Context == HTML.BodyContext {
         formatter.dateStyle = .long
         
         let sortedItems = items.sorted {
-            $0.date < $1.date
+            $0.date > $1.date
         }
         
         return
@@ -45,7 +45,7 @@ extension Node where Context == HTML.BodyContext {
                                 ),
                                 // Creates a description  of what our post is about
                                 .p(.text(item.description)),
-                                .p(.text("Published: \(formatter.string(from: item.lastModified))")),
+                                .p(.text("Published: \(formatter.string(from: item.date))")),
                                 .tagList(for: item.tags, on: site)
                             )
                         )
