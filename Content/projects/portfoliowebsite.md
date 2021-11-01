@@ -1,7 +1,7 @@
 ---
 date: 2021-10-26 9:00
 description: Development of my Portfolio Website
-tags: html, css, swift, projects, 
+tags: html, css, swift, projects, ongoing
 ---
 # Portfolio Website
 

@@ -24,7 +24,7 @@ extension Node where Context == HTML.BodyContext {
             // Creates a container
             .div(
                 // Provides a CSS class to this container
-                .class("footer"),
+                .class("footer-2"),
                 // Creates another container for copyright information
                 .div(
                     .text(string)
@@ -58,9 +58,6 @@ extension Node where Context == HTML.BodyContext {
                             .src(emailImage)
                         )
                     )
-//                  .i(
-//                      .class("fab fa-github")
-//                  )
                 )
         )
     }

@@ -1,7 +1,7 @@
 ---
 date: 2021-10-27 15:00
 description: Development of a prototype measure app using SceneKit
-tags: ios, swift, projects
+tags: ios, swift, projects, ongoing
 ---
 # Distance Calculator App
 
