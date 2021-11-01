@@ -56,11 +56,6 @@ extension MyHTMLFactory {
                                 )
                             ),
                             .div(
-                                .h1("Ongoing Projects"),
-                                .Ongoing(for: section.items, on: context.site),
-                                .AllTags(for: section.items, on: context.site)
-                            ),
-                            .div(
                                 .class("footer"),
                                 .myFooter(for: context.site)
                             )

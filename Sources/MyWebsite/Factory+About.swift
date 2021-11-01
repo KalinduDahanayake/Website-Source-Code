@@ -21,10 +21,10 @@ extension MyHTMLFactory {
                         .div(
                             .class("content-wrap"),
                             .myHeader(for: context),
-                            .img (
-                                .class("logo-image"),
-                                .src(homeImage)
-                            ),
+//                            .img (
+//                                .class("logo-image"),
+//                                .src(homeImage)
+//                            ),
                             .h2(
                                 .text("ABOUT ME")
                             ),

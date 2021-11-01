@@ -80,6 +80,7 @@ struct MyHTMLFactory<Site: Website>: HTMLFactory {
                 .body(
                     .myHeader(for: context),
                     .h1(
+                        .class("padding"),
                         .text("All posts with the tag \(page.tag.string)")
                     ),
                     .postContent(for: context.items(taggedWith: page.tag), on: context.site),

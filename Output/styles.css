@@ -220,6 +220,10 @@ a {
     background-color: darkviolet;
 }
 
+.post-category-ongoing {
+    background-color: darkcyan;
+}
+
 
 @keyframes blink {
     50% {
