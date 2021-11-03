@@ -4,6 +4,10 @@
 *  MIT license, see LICENSE file for details
 */
 
+html {
+  scroll-behavior: smooth;
+} 
+
 * {
     margin: 0;
     padding: 0;
@@ -253,10 +257,6 @@ a {
     }
   }
   
-  body2{
-    background:black;
-  }
-  
   .p{
     left:0px;
     top:50px;
@@ -300,22 +300,22 @@ a {
   .p-3{
     animation-duration: 4s;
     animation-delay: 500ms;;
-    top:20%;
+    top:30%;
   }
   .p-4{
     animation-duration: 3s;
     animation-delay: 300ms;
-    top:30%;
+    top:50%;
   }
   .p-5{
     animation-duration: 5.5s;
     animation-delay: 190ms;
-    top:40%;
+    top:70%;
   }
   .p-6{
     animation-duration: 3s;
     animation-delay: 450ms;
-    top:50%;
+    top:90%;
   }
 
 pre code {

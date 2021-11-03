@@ -1,4 +1,152 @@
-<!DOCTYPE html><html><head><meta charset="UTF-8"/><meta name="og:site_name" content="KalinduDahanayake"/><link rel="canonical" href="www.KalinduDahanayake/KalinduDahanayake.github.io/projects/portfoliowebsite"/><meta name="twitter:url" content="www.KalinduDahanayake/KalinduDahanayake.github.io/projects/portfoliowebsite"/><meta name="og:url" content="www.KalinduDahanayake/KalinduDahanayake.github.io/projects/portfoliowebsite"/><title>Portfolio Website | KalinduDahanayake</title><meta name="twitter:title" content="Portfolio Website | KalinduDahanayake"/><meta name="og:title" content="Portfolio Website | KalinduDahanayake"/><meta name="description" content="Development of my Portfolio Website"/><meta name="twitter:description" content="Development of my Portfolio Website"/><meta name="og:description" content="Development of my Portfolio Website"/><meta name="twitter:card" content="summary"/><link rel="stylesheet" href="/styles.css" type="text/css"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><link rel="shortcut icon" href="/Images/S7iaWZsg.jpg" type="image/x-icon"/><link rel="alternate" href="/feed.rss" type="application/rss+xml" title="Subscribe to KalinduDahanayake"/></head><body><header><div class="wrapper"><h1>Kalindu Dahanayake</h1><nav><ul><li><a href="/home">Home</a></li><li><a href="/projects">Projects</a></li><li><a href="/about">About</a></li></ul></nav></div></header><div class="wrapper"><article><h1>Portfolio Website</h1><pre><code><span class="keyword">static func</span> AllTags&lt;T: <span class="type">Website</span>&gt;(for items: [<span class="type">Item</span>&lt;<span class="type">T</span>&gt;], on site: <span class="type">T</span>) -&gt; <span class="type">Node</span> {
+<!DOCTYPE html><html><head><meta charset="UTF-8"/><meta name="og:site_name" content="KalinduDahanayake"/><link rel="canonical" href="www.KalinduDahanayake/KalinduDahanayake.github.io/projects/portfoliowebsite"/><meta name="twitter:url" content="www.KalinduDahanayake/KalinduDahanayake.github.io/projects/portfoliowebsite"/><meta name="og:url" content="www.KalinduDahanayake/KalinduDahanayake.github.io/projects/portfoliowebsite"/><title>Portfolio Website | KalinduDahanayake</title><meta name="twitter:title" content="Portfolio Website | KalinduDahanayake"/><meta name="og:title" content="Portfolio Website | KalinduDahanayake"/><meta name="description" content="Development of my Portfolio Website"/><meta name="twitter:description" content="Development of my Portfolio Website"/><meta name="og:description" content="Development of my Portfolio Website"/><meta name="twitter:card" content="summary"/><link rel="stylesheet" href="/styles.css" type="text/css"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><link rel="shortcut icon" href="/Images/S7iaWZsg.jpg" type="image/x-icon"/><link rel="alternate" href="/feed.rss" type="application/rss+xml" title="Subscribe to KalinduDahanayake"/></head><body><header><div class="wrapper"><h1>Kalindu Dahanayake</h1><nav><ul><li><a href="/home">Home</a></li><li><a href="/projects">Projects</a></li><li><a href="/about">About</a></li></ul></nav></div></header><div class="wrapper"><article><h1>Portfolio Website</h1><p>-&gt; <a href="#First Deployment"> First Deployment</a><br/> -&gt; <a href="#Adding Images and Icons"> Adding Images and Icons</a><br/> -&gt; <a href="#CSS Fun">  CSS Fun</a><br/> -&gt; <a href="#All Tags">  All Tags</a><br/></p><br/><p>Intially I had this portfolio website made using an <a href="https://html5up.net/">HTML5 UP</a> template, specifically the <em>Landed</em> template, which let me host a premade website without having to deal with complex HTML and CSS.<br><br><div class="padding"/></p><img src="/Images/oldWebsite.png"  width="100%"/><div class="padding"/><p>However, I felt like I should be making my website from the ground up, rather than building upon a full-fleshed out CSS template.</p><div class="padding"/><p>This is when I came across John Sundell's <a href="https://https://github.com/JohnSundell/Publish.net/">Publish</a> framework, which uses Swift to compile HTML code and linking CSS. This also meant I had to write my own custom css templating as well as html code written using Swift syntax.</p><a id="First Deployment"/><p><strong>First Deployment</strong></p><img src="/Images/firstIteration.png"  width="100%"/><p>Quite boring right? Let's change that.</p><br/><a id="Adding Images and Icons"/><p><strong>Adding Images and Icons</strong></p><br/><p>Adding images is fairly simple, the syntax takes after the HTML method, attributing an <em>img</em> class and href the local file.</p><pre><code><span class="keyword">var</span> homeImage: <span class="type">Path</span> { <span class="string">"Images/S7iaWZsg.jpg"</span> }
+
+...
+
+    .<span class="dotAccess">img</span> (
+        .<span class="call">class</span>(<span class="string">"logo-image"</span>),
+        .<span class="call">src</span>(homeImage)
+    ),
+</code></pre><p>That's it. A local image path, a css class and the src link for the img class.</p><p>The footer icons were admitted done using png images instead of an icon pack like <em>fontawesome</em>. But I couldn't get the icon pack to work.</p><pre><code><span class="keyword">var</span> githubImage: <span class="type">Path</span> { <span class="string">"Images/icons8-github-48.png"</span> }
+<span class="keyword">var</span> linkedinImage: <span class="type">Path</span> { <span class="string">"Images/174857.png"</span> }
+<span class="keyword">var</span> emailImage: <span class="type">Path</span> { <span class="string">"Images/icons8-gmail-48.png"</span> }
+
+...
+
+.<span class="call">div</span>(
+    .<span class="call">class</span>(<span class="string">"icon"</span>),
+    .<span class="call">a</span>(
+        .<span class="call">href</span>(<span class="string">"https://www.linkedin.com/in/Kalindu-Dahanayake/"</span>),
+        .<span class="dotAccess">img</span> (
+            .<span class="call">src</span>(linkedinImage)
+        )
+    ),
+    .<span class="call">a</span>(
+        .<span class="call">href</span>(<span class="string">"https://github.com/KalinduDahanayake"</span>),
+        .<span class="dotAccess">img</span> (
+            .<span class="call">src</span>(githubImage)
+        )
+    ),
+    .<span class="call">a</span>(
+        .<span class="call">href</span>(<span class="string">"mailto:kalindu22@gmail.com"</span>),
+        .<span class="dotAccess">img</span> (
+            .<span class="call">src</span>(emailImage)
+        )
+    )
+)
+
+</code></pre><p>That brings us to this version</p><img src="/Images/secondIteration.png"  width="100%"/><a id="CSS Fun"/><p><strong>CSS Fun</strong></p><p>I'm very proud of these CSS elements, mostly because it looks cool :) The CSS code for the shooting star animation feature is quite long but here it is</p><pre><code>...
+    .<span class="call">div</span>(
+        .<span class="call">div</span>(
+            .<span class="call">class</span>(<span class="string">"p p-1"</span>)
+        ),
+        .<span class="call">div</span>(
+            .<span class="call">class</span>(<span class="string">"p p-2"</span>)
+        ),
+        .<span class="call">div</span>(
+            .<span class="call">class</span>(<span class="string">"p p-3"</span>)
+        ),
+        .<span class="call">div</span>(
+            .<span class="call">class</span>(<span class="string">"p p-4"</span>)
+        ),
+        .<span class="call">div</span>(
+            .<span class="call">class</span>(<span class="string">"p p-5"</span>)
+        ),
+        .<span class="call">div</span>(
+            .<span class="call">class</span>(<span class="string">"p p-6"</span>)
+        )
+    ),
+...
+
+
+<span class="comment">// CSS</span>
+
+
+.<span class="property">p</span>{
+  left:0px;
+  top:50px;
+  width:2px;
+  height:2px;
+  background-color:white;
+  position:absolute;
+  animation-name:particleAnimation;
+  animation-timing-function:ease-<span class="keyword">in</span>;
+  animation-iteration-count: infinite;
+  z-index: -<span class="number">1</span>;
+}
+
+.<span class="property">p</span>::before{
+  position:absolute;
+  display:block;
+  content:<span class="string">""</span>;
+  width:100px;
+  right:1px;
+  top:0px;
+  height:1px;
+  background: linear-<span class="call">gradient</span>(to right, <span class="call">rgba</span>(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>) <span class="number">0</span>%,<span class="call">rgba</span>(<span class="number">228</span>, <span class="number">72</span>, <span class="number">72</span>, <span class="number">1</span>) <span class="number">100</span>%);
+  animation-delay: 1000ms;
+}
+
+.<span class="property">p</span>-<span class="number">1</span>{
+  animation-duration: <span class="number">2</span>.5s;
+  animation-delay: 650ms;
+}
+
+... each shooting star has staggered delays so they appear to have randomised times 
+
+.<span class="property">p</span>-<span class="number">6</span>{
+  animation-duration: 3s;
+  animation-delay: 450ms;
+  top:<span class="number">90</span>%;
+}
+
+</code></pre><p>The typing feature was similar in style. The div that contains all the text takes the CSS class for the typing animation, and each h1 element is an nth-child of the class with the h1 element class.</p><pre><code>...
+.<span class="call">div</span>(
+    .<span class="call">class</span>(<span class="string">"dynamic-typing"</span>),
+    .<span class="call">h1</span>(
+        .<span class="call">text</span>(<span class="string">"</span><span class="comment">// My name is Kalindu Dahanayake.")</span>
+    ),
+    .<span class="call">h1</span>(
+        .<span class="call">text</span>(<span class="string">"</span><span class="comment">// Welcome to my Portfolio Page.")</span>
+    )
+)
+...
+
+<span class="comment">// CSS</span>
+
+.<span class="property">dynamic</span>-<span class="call">typing</span> {
+    text-align: auto;
+    display: inline-block;
+}
+.<span class="property">dynamic</span>-typing <span class="call">h1</span> {
+    border-right: .15em solid #E44C65;
+    font-family: <span class="string">"Courier"</span>;
+    font-weight: bold;
+    opacity: <span class="number">0</span>;
+    font-size: 25px;
+    margin: <span class="number">0</span> right; <span class="comment">/* Gives that scrolling effect as the typing happens */</span>
+    white-space: nowrap;
+    overflow: hidden;
+    color: white;
+}
+
+.<span class="property">dynamic</span>-typing h1:nth-<span class="call">child</span>(<span class="number">1</span>) {
+    width: <span class="number">100</span>%;
+    animation: type 1s <span class="call">steps</span>(<span class="number">40</span>, end);
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    align-self: left;
+}
+
+.<span class="property">dynamic</span>-typing h1:nth-<span class="call">child</span>(<span class="number">2</span>) {
+    width: <span class="number">100</span>%;
+    opacity: <span class="number">0</span>;
+    animation: type2 1s <span class="call">steps</span>(<span class="number">40</span>, end), blink .5s step-end infinite alternate;;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+</code></pre><div class="dynamic-typing">
+<h1>// This gives this typing animation.</h1>
+</div><a id="All Tags"/><br></br><p><strong>All Tags</strong></p><p>This was a feature I worked on for a while, mostly figuring out the data structure that Publish uses.</p><pre><code><span class="keyword">static func</span> AllTags&lt;T: <span class="type">Website</span>&gt;(for items: [<span class="type">Item</span>&lt;<span class="type">T</span>&gt;], on site: <span class="type">T</span>) -&gt; <span class="type">Node</span> {
     <span class="keyword">var</span> everyTag = [<span class="type">Tag</span>]()
     
     items.<span class="call">forEach</span> { item <span class="keyword">in</span>
@@ -15,4 +163,20 @@
                 .<span class="call">tagList</span>(for: uniqueTags, on: site)
         )
 }
-</code></pre></article></div><div class="footer-2"><div>2/11/2021</div><div>Generated using <a href="https://github.com/johnsundell/publish">Publish</a>. Written in Swift</div><div class="icon"><a href="https://www.linkedin.com/in/Kalindu-Dahanayake/"><img src="/Images/174857.png"/></a><a href="https://github.com/KalinduDahanayake"><img src="/Images/icons8-github-48.png"/></a><a href="mailto:kalindu22@gmail.com"><img src="/Images/icons8-gmail-48.png"/></a></div></div></body></html>
+</code></pre><pre><code><span class="keyword">static func</span> AllTags&lt;T: <span class="type">Website</span>&gt;(for items: [<span class="type">Item</span>&lt;<span class="type">T</span>&gt;], on site: <span class="type">T</span>) -&gt; <span class="type">Node</span> {
+    <span class="keyword">var</span> everyTag = [<span class="type">Tag</span>]()
+    
+    items.<span class="call">forEach</span> { item <span class="keyword">in</span>
+        item.<span class="property">tags</span>.<span class="call">forEach</span> { subItem <span class="keyword">in</span>
+            everyTag.<span class="call">append</span>(subItem)
+        }
+    }
+</code></pre><p>Essentially, each project post is considered an "Item", a struct contain all the information within the post. The function is given an array of all the projects. Then, within each item is an array of tag, which I append to an array of tags.</p><pre><code><span class="keyword">var</span> uniqueTags = <span class="type">Array</span>(<span class="type">Set</span>(everyTag))
+uniqueTags = uniqueTags.<span class="call">sorted</span> { $0.<span class="property">string</span> &lt; $1.<span class="property">string</span> }
+</code></pre><p>The array is put into a set, then back into an array. A set, in Swift, can't ever have duplicate elements, as such by converting an array into a set then into an array, only unique tags are left.</p><p>These tags are then sorted alphabetically.</p><pre><code><span class="keyword">return</span>
+    .<span class="call">div</span>(
+        .<span class="call">h1</span>(<span class="string">"All tags"</span>),
+            .<span class="call">tagList</span>(for: uniqueTags, on: site)
+    )
+
+</code></pre><p>Finally, all the tags are injected into the .tagList, which displays the input tags in a line.</p><img src="/Images/allTags.png"  width="100%"/></article></div><div class="footer-2"><div>3/11/2021</div><div>Generated using <a href="https://github.com/johnsundell/publish">Publish</a>. Written in Swift</div><div class="icon"><a href="https://www.linkedin.com/in/Kalindu-Dahanayake/"><img src="/Images/174857.png"/></a><a href="https://github.com/KalinduDahanayake"><img src="/Images/icons8-github-48.png"/></a><a href="mailto:kalindu22@gmail.com"><img src="/Images/icons8-gmail-48.png"/></a></div></div></body></html>
