@@ -13,12 +13,14 @@ extension Node where Context == HTML.BodyContext {
     
     static func AllTags<T: Website>(for items: [Item<T>], on site: T) -> Node {
         var everyTag = [Tag]()
+        
         // access each post's tags and append to an array of tags
         items.forEach { item in
             item.tags.forEach { subItem in
                 everyTag.append(subItem)
             }
         }
+        
         // removes repeated tags
         let uniqueTags = Array(Set(everyTag))
         return
