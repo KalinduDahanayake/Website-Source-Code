@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-echo "Hello"
-git add . 
-git commit -m "Updates" 
-git push
