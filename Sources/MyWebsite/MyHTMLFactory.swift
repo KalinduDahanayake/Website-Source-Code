@@ -57,17 +57,6 @@ struct MyHTMLFactory<Site: Website>: HTMLFactory {
                 .myHeader(for: context),
                 .wrapper (
                     .h1("Browse all tags")
-                    
-                    
-//                    List(page.tags.sorted()) { tag in
-//                        ListItem {
-//                            Link(tag.string,
-//                                 url: context.site.path(for: tag).absoluteString
-//                            )
-//                        }
-//                        .class("tag")
-//                    )
-//                    .class("all-tags")
                 ),
                 .myFooter(for: context.site)
             )

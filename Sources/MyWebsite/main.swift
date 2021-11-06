@@ -18,8 +18,8 @@ struct MyWebsite: Website {
 
     // Update these properties to configure your website:
     var url = URL(string: "www.KalinduDahanayake/KalinduDahanayake.github.io")!
-    var name = "KalinduDahanayake"
-    var description = "KalinduDahanayake Portfolio Page"
+    var name = "Kalindu Dahanayake"
+    var description = "Kalindu Dahanayake Portfolio Page"
     var language: Language { .english }
     var imagePath: Path? { nil }
     var favicon: Favicon?  {
