@@ -2,5 +2,5 @@
 .git/
 .publish/
 .swiftpm/
-testScript
-pushScript
+.testScript
+.pushScript
