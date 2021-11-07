@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-echo "Hello"
 cd ..
 git fetch
 git pull
