@@ -279,3 +279,6 @@ Finally,  all the tags are injected into the .tagList, which displays the input 
 <img src="/Images/allTags.png"  width="100%"/>
 
 
+I also wrote a bash script to make the deployment easier, Publish already includes a deployment path but for unknown reasons, it does not work
+
+<img src="/Images/pushScriptforWebsite.png"  width="100%"/>
