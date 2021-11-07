@@ -33,7 +33,7 @@ extension MyHTMLFactory {
                             ),
                             .h4(
                                 .class("padding"),
-                                .text("Passions: Programming, photography and making things go!")
+                                .text("Passions: Programming, photography and making things go.")
                             ),
                             .div(
                                 .div(
