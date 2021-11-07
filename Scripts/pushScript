@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 echo "Hello"
 cd ..
+git fetch
 git add . 
 git commit -m "Updates" 
 git push
