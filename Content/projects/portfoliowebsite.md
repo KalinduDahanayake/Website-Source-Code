@@ -4,10 +4,14 @@ description: Development of my Portfolio Website
 tags: html, css, swift, projects, ongoing
 ---
 # Portfolio Website
+      
+
+
 -> <a href="#First Deployment"> First Deployment</a><br/>
 -> <a href="#Adding Images and Icons"> Adding Images and Icons</a><br/>
 -> <a href="#CSS Fun">  CSS Fun</a><br/>
 -> <a href="#All Tags">  All Tags</a><br/>
+-> <a href="#Misc">  Misc</a><br/>
 
 <br/>
 
@@ -22,19 +26,17 @@ Intially I had this portfolio website made using an [HTML5 UP](https://html5up.n
 However, I felt like I should be making my website from the ground up, rather than building upon a full-fleshed out CSS template. 
 
 <div class="padding"/>
-
-This is when I came across John Sundell's [Publish](https://https://github.com/JohnSundell/Publish.net/) framework, which uses Swift to compile HTML code and linking CSS. This also meant I had to write my own custom css templating as well as html code written using Swift syntax. 
-
 <a id="First Deployment"/>
+This is when I came across John Sundell's [Publish](https://https://github.com/JohnSundell/Publish.net/) framework, which uses Swift to compile HTML code and linking CSS. This also meant I had to write my own custom css templating as well as html code written using Swift syntax. 
 
 __First Deployment__
 <img src="/Images/firstIteration.png"  width="100%"/>
 
+
+<a id="Adding Images and Icons"/>
 Quite boring right? Let's change that.
 
 <br/>
-
-<a id="Adding Images and Icons"/>
 
 __Adding Images and Icons__
 
@@ -212,12 +214,12 @@ The typing feature was similar in style. The div that contains all the text take
 }
 ```
 
+<a id="All Tags"/>
 <div class="dynamic-typing">
 <h1>// This gives this typing animation.</h1>
 </div>
 
 
-<a id="All Tags"/>
 <br></br>
 
 __All Tags__
@@ -279,6 +281,12 @@ Finally,  all the tags are injected into the .tagList, which displays the input 
 <img src="/Images/allTags.png"  width="100%"/>
 
 
+<a id="Misc"/>
+__Misc__ 
+
 I also wrote a bash script to make the deployment easier, Publish already includes a deployment path but for unknown reasons, it does not work
 
 <img src="/Images/pushScriptforWebsite.png"  width="100%"/>
+ 
+
+<a class="top_button" href=#>Back to top</a>
