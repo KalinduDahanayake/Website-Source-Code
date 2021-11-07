@@ -55,6 +55,7 @@ extension MyHTMLFactory {
                                     )
                                 )
                             ),
+                            .h1("Lets go!!!"),
                             .div(
                                 .class("footer"),
                                 .myFooter(for: context.site)
