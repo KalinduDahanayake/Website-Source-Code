@@ -1,7 +1,7 @@
 ---
 date: 2021-10-09 14:50
 description: My experience in HTML/CSS
-tags: html, css, projects, 
+tags: html, css, projects, ongoing
 ---
 # HTML and CSS
 

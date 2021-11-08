@@ -1,7 +1,7 @@
 ---
 date: 2021-10-09 14:50
 description: 
-tags: redback, engineering, projects
+tags: redback, engineering, projects, completed
 ---
 # L-Bracket mounts
 

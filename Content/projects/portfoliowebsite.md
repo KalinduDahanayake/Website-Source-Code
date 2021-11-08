@@ -164,6 +164,15 @@ The CSS code for the shooting star animation feature is quite long but here it i
 }
 
 ```
+This gives us this nice animation
+<br></br>
+<div>
+<div class="p p-3" style="position:relative"></div><br></br>
+<div class="p p-5" style="position:relative"></div><br></br>
+<div class="p p-6" style="position:relative"></div>
+</div>
+<br></br>
+
 The typing feature was similar in style. The div that contains all the text takes the CSS class  for the typing animation, and each h1 element is an nth-child of the class with the h1 element class.
 
 ```
@@ -288,5 +297,6 @@ I also wrote a bash script to make the deployment easier, Publish already includ
 
 <img src="/Images/pushScriptforWebsite.png"  width="100%"/>
  
+<br></br>
 
-<a class="top_button" href=#>Back to top</a>
+<a class="top_button" href=# style="text-decoration: none">Back to top</a>
