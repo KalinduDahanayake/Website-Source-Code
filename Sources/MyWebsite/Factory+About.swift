@@ -35,6 +35,17 @@ extension MyHTMLFactory {
                                 .class("padding"),
                                 .text("Passions: Programming, photography and making things go!")
                             ),
+                            .h2(
+                                .class("padding"),
+                                .text("CONTACT ME")
+                            ),
+                            .h4(
+                                .class("padding"),
+                                .text("Email: kalindu.dahanayake2@gmail.com")
+                            ),
+                            .h4(
+                                .text("Phone: 0484 143 141")
+                            ),
                             .div(
                                 .div(
                                     .class("p p-1")
