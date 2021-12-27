@@ -22,7 +22,7 @@ extension Node where Context == HTML.BodyContext {
             }
         }
         // removes repeated tags
-        var uniqueTags = Array(Set(everyTag))
+        let uniqueTags = Array(Set(everyTag))
         //uniqueTags = uniqueTags.sorted { $0.string < $1.string }
         return
             .div(
