@@ -37,7 +37,7 @@ extension MyHTMLFactory {
                             ),
                             .h2(
                                 .class("padding"),
-                                .text("CONTACT ME")
+                                .text("CONTACT ME.")
                             ),
                             .h4(
                                 .class("padding"),
