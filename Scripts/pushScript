@@ -7,8 +7,7 @@ git commit -m "Updates"
 git push
 cp -R ~/Desktop/KalinduDahanayake.github.io/Output/ ~/Desktop/Website\ Deployment
 cd  ~/Desktop/Website\ Deployment
-git fetch
-git pull
+git fetch≈
 git add .
 git commit -m "Updates"
 git push
