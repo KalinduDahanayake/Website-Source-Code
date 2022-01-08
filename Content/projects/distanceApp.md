@@ -9,7 +9,7 @@ tags: ios, swift, projects, ongoing
 class MeasureObjectViewController: UIViewController, ARSCNViewDelegate {
 ```
 
-    Messing around with SceneKit to make a clone Measure app.
+    Messing around with SceneKit to make a clone Measure app!
 
 ```
 }

@@ -21,7 +21,7 @@ extension Node where Context == HTML.BodyContext {
             }
         }
         
-        // removes repeated tags, yeet
+        // removes repeated tags
         let uniqueTags = Array(Set(everyTag))
         return
             .div(
