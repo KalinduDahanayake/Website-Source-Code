@@ -29,4 +29,4 @@ We drew great inspiration from modern UI design, especially in the use of pastel
 
 I personally was involved in the coding aspect of the UI/UX design of the app as well as some gameplay aspects. Since I have some experience in mobile app design, I took responsibility for the final deployment of the app onto a mobile device specifically an iPhone 12.
 
-We also considered implementing a fully operation QR code scanning but with the time restrictions, we could not complete it in time and instead put in a 
+We also considered implementing a fully operation QR code scanning but with the time restrictions, we could not complete it in time and instead put in a storyboard replacement.
