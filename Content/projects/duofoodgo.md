@@ -7,7 +7,7 @@ tags: unity, c++, ios, projects, completed
 
 A prototype mobile restaurant exploration app made in Unity 3D for the SYNCSHACK Hackathon. 
 
-This project was completed in under 2 days with a couple of friends. Being our first hackathon, we were very much in the deep end. At things considered though, we did very well, reaching finals and coming 7th out of 35 projects! 
+This project was completed in under 2 days with a couple of friends. Being our first hackathon, we were very much in the deep end. All things considered though, we did very well, reaching finals and coming 7th out of 35 projects! 
 
 <p align="center">
     <img src="/Images/Duofoodgo.gif"  width="30%"/>
